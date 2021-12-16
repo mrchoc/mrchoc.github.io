@@ -1,0 +1,159 @@
+:root {
+  --background-primary: rgb(230, 230, 230);
+  --highlight-primary: #223136;
+}
+
+.title-container {
+  height: 40vh;
+  background-color: var(--background-primary);
+}
+
+.title-welcome {
+  font-family: "Roboto Mono Medium", monospace;
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #0be99f;
+  }
+}
+
+.title-name {
+  color: rgba(230, 230, 230);
+  background-color: #0be99f;
+
+  font-family: "Roboto Mono Medium", monospace;
+  font-size: 4rem;
+  font-weight: 700;
+
+  position: relative;
+  top: 0.5rem;
+}
+
+.title-tag {
+  font-family: "Roboto Mono Medium", monospace;
+  font-size: 1.5rem;
+
+  position: relative;
+  top: 1rem;
+}
+
+.about-me-container {
+  height: 40vh;
+
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+
+  background-color: #171b21;
+}
+
+.about-me-image {
+  width: 20vw;
+  height: 39vh;
+
+  border-radius: 50%;
+
+  box-shadow: 10px 5px 10px black;
+}
+
+.about-me-text {
+  color: var(--background-primary);
+
+  font-size: 1.1rem;
+  font-family: "Roboto Mono Medium", monospace;
+
+  text-align: center;
+  vertical-align: middle;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.contact-me-container {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Roboto Mono Medium", monospace;
+}
+
+.contact-me-icon {
+  width: 4rem;
+  height: 4rem;
+  display: inline-block;
+}
+
+.contact-me-title {
+  font-size: 25px;
+}
+
+.achievements-container {
+  width: 80vw;
+  margin-left: 10vw;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.projects-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Roboto Mono Medium", monospace;
+
+  margin-top: 5vh;
+  margin-left: 10vw;
+  margin-bottom: 3rem;
+}
+
+.achievements-image {
+  width: 20vw;
+  height: 20vw;
+
+  border-radius: 100%;
+
+  box-shadow: 10px 5px 10px black;
+}
+
+details {
+  padding: 0.75em 0.75em 0;
+  margin-left: 10vw;
+}
+
+summary {
+  font-family: "Roboto Mono Medium", monospace;
+  margin: -0.75em -0.75em 0;
+  padding: 0.75em;
+}
+
+details[open] {
+  padding: 0.75em;
+}
+
+details[open] summary {
+  margin-bottom: 0.75em;
+}
