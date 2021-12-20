@@ -1,6 +1,12 @@
 :root {
   --background-primary: rgb(230, 230, 230);
   --highlight-primary: #223136;
+  --font-family: "Roboto Mono Medium", monospace;
+}
+
+p {
+  font-family: var(--font-family);
+  font-size: 15px;
 }
 
 .title-container {
